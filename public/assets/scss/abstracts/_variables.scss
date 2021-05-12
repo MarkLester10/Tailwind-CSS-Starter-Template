@@ -1,0 +1,89 @@
+// // -----------------------------------------------------------------------------
+// // This file contains all application-wide Sass variables.
+// // -----------------------------------------------------------------------------
+
+// @font-face {
+//   font-family: FuturaTitle;
+//   src: url("../scss/fonts/FuturaPTDemi.otf");
+// }
+// @font-face {
+//   font-family: FuturaBody;
+//   src: url("../scss/fonts/FuturaPTBook.otf");
+// }
+// @font-face {
+//   font-family: FuturaSubTitle;
+//   // src: url("../scss/fonts/FuturaPTMedium.otf");
+//   src: url("../scss/fonts/FuturaPTMedium.otf");
+// }
+// @font-face {
+//   font-family: FuturaGreetings;
+//   src: url("../scss/fonts/FuturaPTCondMedium.otf");
+// }
+
+// /// Body font family
+// $body-font: FuturaBody, sans-serif !default;
+
+// /// Title font family
+// $title-font: FuturaTitle, sans-serif !default;
+
+// /// Subtitle font family
+// $subtitle-font: FuturaSubTitle, sans-serif !default;
+
+// /// Greetings font family
+// $greeting-font: FuturaGreetings, sans-serif !default;
+
+// /// Copy text color
+// /// @type Color
+// $text-color: rgb(34, 34, 34) !default;
+
+// /// Primary  color
+// /// @type Color
+// $primary-color: #17223b !default;
+
+// /// Secondary  color
+// /// @type Color
+// $secondary-color: #ff6768 !default;
+
+// /// Blue  color
+// /// @type Color
+// $blue: #55c3ff !default;
+
+// /// Light grey
+// /// @type Color
+// $light-grey: #f9fafc !default;
+
+// /// Medium grey
+// /// @type Color
+// $mid-grey: #828c96 !default;
+
+// /// Medium primary
+// /// @type Color
+// // $deep-primary: #090f28 !default;
+// $mid-primary: #363f54 !default;
+
+// /// Dark primary
+// /// @type Color
+// $dark-primary: #050e25 !default;
+
+// /// Dark grey
+// /// @type Color
+// $dark-grey: rgb(68, 68, 68) !default;
+
+// //Gradient
+// /// @type Color
+// $gradient-dark: linear-gradient(
+//   to left bottom,
+//   #050e25,
+//   #0a142a,
+//   #0e1930,
+//   #121d35,
+//   #17223b
+// );
+// $gradient-mixed: linear-gradient(
+//   to right,
+//   #050e25,
+//   #38264f,
+//   #7b366b,
+//   #c24773,
+//   #ff6768
+// );

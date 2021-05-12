@@ -1,0 +1,26 @@
+{
+  "name": "tailwindcss-template",
+  "version": "1.0.0",
+  "description": "A tailwind css starter template - HTML",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss src/tailwind.css -o public/assets/css/app.css"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwind-css",
+    "tailwind-css-template",
+    "css"
+  ],
+  "author": "Mark Lester Morta",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^5.0.2",
+    "postcss": "^8.2.15",
+    "tailwindcss": "^2.1.2"
+  },
+  "dependencies": {
+    "postcss-cli": "^8.3.1"
+  }
+}

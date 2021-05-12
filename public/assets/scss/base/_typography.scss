@@ -1,0 +1,83 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $primary-color;
+  font: normal 125% /2rem $body-font;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  min-height: 100vh !important;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: $dark-primary;
+  width: 100%;
+}
+
+.title-text {
+  font: normal 125% /12rem $title-font;
+  letter-spacing: 1.2rem;
+  font-size: 12rem;
+  z-index: 50 !important;
+
+  @media screen and (max-width: 768px) {
+    font-size: 7.6rem;
+    line-height: 7.6rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 6rem;
+    line-height: 6rem;
+    letter-spacing: 1rem;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+.title-text-md {
+  font: normal 125% /4.8rem $title-font;
+  letter-spacing: 0.8rem;
+  font-size: 4rem;
+
+  @media screen and (max-width: 480px) {
+    font-size: 2.8rem;
+    letter-spacing: 0.5rem;
+    line-height: 3.3rem;
+  }
+}
+
+.subtitle-text {
+  font: normal 125% /3rem $subtitle-font;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  color: $light-grey;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
+
+.para {
+  font: normal 125% /2.5rem $body-font;
+  font-size: 1.5rem;
+  color: $mid-grey;
+  letter-spacing: 2px;
+
+  @media screen and (max-width: 480px) {
+    line-height: 2.3rem;
+  }
+}
+
+.greeting-text {
+  font: normal 125% /3.2rem $greeting-font;
+  font-size: 3.2rem;
+
+  @media screen and (max-width: 320px) {
+    font-size: 2rem;
+  }
+}
+
+.italic {
+  font-style: italic !important;
+}

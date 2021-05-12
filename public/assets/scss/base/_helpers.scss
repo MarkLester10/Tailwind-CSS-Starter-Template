@@ -1,0 +1,234 @@
+.wrapper {
+  padding: 0 8rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    padding: 1rem 2rem;
+  }
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  z-index: 10 !important;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+//text emphasis
+.em {
+  color: $secondary-color;
+}
+.em-dark {
+  color: $primary-color;
+}
+
+.em-blue {
+  color: $blue;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.slide-icon {
+  position: absolute;
+  bottom: 20rem;
+  left: 1.5rem;
+  z-index: 5 !important;
+  @media screen and (max-width: 768px) {
+    left: -4rem;
+  }
+
+  @media screen and (max-width: 640px) {
+    left: 83%;
+    bottom: 12rem;
+  }
+  @media screen and (max-width: 480px) {
+    left: 80%;
+  }
+  .slider-indicator {
+    display: inline-block;
+    transform: rotate(90deg);
+    transition: all 0.8s ease;
+    letter-spacing: 3px;
+
+    &.active {
+      transform: rotate(90deg) translate(1000px);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0.7rem;
+      margin-left: 1rem;
+      height: 0.3rem;
+      width: 50vh;
+      background: $primary-color;
+    }
+
+    @media screen and (max-width: 480px) {
+      &::after {
+        top: 0.8rem;
+      }
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// overlay
+.base-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  @extend .base-overlay;
+  -webkit-box-shadow: inset 10px 10px 300px 200px rgba(23, 34, 59, 1);
+  -moz-box-shadow: inset 10px 10px 300px 200px rgba(23, 34, 59, 1);
+  box-shadow: inset 10px 10px 300px 200px rgba(23, 34, 59, 1);
+  opacity: 0.6;
+}
+
+.overlay-2 {
+  @extend .base-overlay;
+  -webkit-box-shadow: inset 10px 10px 300px 200px rgba(255, 103, 104, 1);
+  -moz-box-shadow: inset 10px 10px 300px 200px rgba(255, 103, 104, 1);
+  box-shadow: inset 10px 10px 300px 200px rgba(255, 103, 104, 1);
+  opacity: 0.4;
+}
+
+.gradient-overlay {
+  @extend .base-overlay;
+  background: $gradient-mixed;
+  opacity: 0.5;
+}
+
+//glassmorphism
+.glass {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+// Illustrations
+.illustration {
+  height: 20rem;
+  width: 20rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    display: block;
+    padding: 4rem;
+    z-index: 5;
+    line-height: 3rem;
+    font-size: 2.5rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    height: 15rem;
+    width: 15rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// box
+.box {
+  @extend .illustration;
+  background-color: #fff;
+  border: 1.5rem solid $primary-color;
+  color: #fff;
+
+  &::after {
+    background-color: $primary-color;
+  }
+}
+
+// triangle
+.triangle {
+  @extend .illustration;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: $secondary-color;
+  color: $secondary-color;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    top: 55%;
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+}
+
+//circle
+.circle {
+  @extend .illustration;
+  clip-path: circle(50% at 50% 50%);
+  background-color: $blue;
+  color: $blue;
+  opacity: 0.4 !important;
+
+  &::after {
+    background-color: #fff;
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+
+// card image
+.card-img {
+  position: relative;
+  .num {
+    font-size: 8rem;
+    font-family: $title-font;
+    line-height: 10rem;
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    bottom: 0;
+    right: 1rem;
+    @media screen and (max-width: 640px) {
+      font-size: 6rem;
+    }
+  }
+}
+
+.base-dot {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: $secondary-color;
+}
+
+.dot {
+  @extend .base-dot;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.dot-sm {
+  @extend .base-dot;
+  width: 1rem;
+  height: 1rem;
+}
